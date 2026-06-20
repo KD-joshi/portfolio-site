@@ -75,7 +75,7 @@ function App() {
               <path d="M2 17L12 22L22 17" stroke="var(--accent-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M2 12L12 17L22 12" stroke="var(--accent-secondary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            KJ<span className="accent">.AI</span>
+            KJ<span className="accent">.</span>
           </div>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
