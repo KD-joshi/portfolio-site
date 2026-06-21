@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import profileImg from './assets/profile.jpg';
 import './App.css';
 
 function App() {
@@ -57,7 +56,7 @@ function App() {
               </div>
             </div>
             <div className="hero-image-wrapper">
-              <img src={profileImg} alt="Kuldeep Joshi" className="hero-image" />
+              <img src="/profile.jpg" alt="Kuldeep Joshi" className="hero-image" />
             </div>
           </div>
         </section>
