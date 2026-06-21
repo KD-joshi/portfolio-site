@@ -1,53 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import profileImg from './assets/profile.jpg';
 import './App.css';
 
 function App() {
-  const [text, setText] = useState('');
-  const phrases = [
-    "Machine Learning Engineer.",
-    "AI Solutions Architect.",
-    "Specializing in NLP & LLMs.",
-    "Building Scalable AI Agents."
-  ];
-
-  useEffect(() => {
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingDelay = 100;
-    let erasingDelay = 50;
-    let newPhraseDelay = 2000;
-    let timeoutId;
-
-    const type = () => {
-      const currentPhrase = phrases[phraseIndex];
-      
-      if (isDeleting) {
-        setText(currentPhrase.substring(0, charIndex - 1));
-        charIndex--;
-      } else {
-        setText(currentPhrase.substring(0, charIndex + 1));
-        charIndex++;
-      }
-      
-      let typeSpeed = isDeleting ? erasingDelay : typingDelay;
-      
-      if (!isDeleting && charIndex === currentPhrase.length) {
-        typeSpeed = newPhraseDelay;
-        isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        typeSpeed = 500;
-      }
-      
-      timeoutId = setTimeout(type, typeSpeed);
-    };
-
-    timeoutId = setTimeout(type, 1000);
-    return () => clearTimeout(timeoutId);
-  }, []);
-
   // Intersection Observer for scroll animations
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -64,25 +19,21 @@ function App() {
 
   return (
     <>
-      <div className="bg-glow bg-glow-cyan"></div>
-      <div className="bg-glow bg-glow-purple"></div>
-
       <nav className="navbar">
         <div className="nav-content">
           <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="var(--accent-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M2 17L12 22L22 17" stroke="var(--accent-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M2 12L12 17L22 12" stroke="var(--accent-secondary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="var(--text-main)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="var(--text-main)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="var(--accent-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            KJ<span className="accent">.</span>
+            KJ
           </div>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -91,18 +42,22 @@ function App() {
       <main>
         {/* Hero Section */}
         <section id="hero" className="hero fade-in">
-          <div className="hero-content">
-            <div className="hero-badge">AI & Machine Learning Engineer</div>
-            <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Kuldeep</span>.<br />
-              <span className="typewriter">{text}</span><span className="cursor">_</span>
-            </h1>
-            <p className="hero-subtitle">
-              A results-driven AI Engineer with a strong foundation in Machine Learning, Natural Language Processing (NLP), and Full Stack Web Development. I architect scalable AI solutions, Transformer-based applications, and robust end-to-end systems.
-            </p>
-            <div className="hero-cta">
-              <a href="#projects" className="btn btn-primary">View My Work</a>
-              <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+          <div className="hero-grid">
+            <div className="hero-content">
+              <div className="hero-badge">AI Engineer</div>
+              <h1 className="hero-title">
+                I Architect <span className="accent">AI Solutions</span> for Businesses.
+              </h1>
+              <p className="hero-subtitle">
+                A results-driven AI Engineer with a strong foundation in Machine Learning, Natural Language Processing (NLP), and Full Stack Web Development. I build scalable, transformer-based applications and robust end-to-end cloud systems.
+              </p>
+              <div className="hero-cta">
+                <a href="#projects" className="btn btn-primary">View My Work</a>
+                <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+              </div>
+            </div>
+            <div className="hero-image-wrapper">
+              <img src={profileImg} alt="Kuldeep Joshi" className="hero-image" />
             </div>
           </div>
         </section>
@@ -111,7 +66,7 @@ function App() {
         <section id="about" className="section fade-in">
           <h2 className="section-title">About <span className="accent">Me</span></h2>
           <div className="about-grid">
-            <div className="about-text glass-card">
+            <div className="about-text clean-card">
               <p>
                 As a Machine Learning Engineer, I serve as an effective liaison between IT and business stakeholders, possessing the technical depth to translate complex requirements into scalable implementations.
               </p>
@@ -123,15 +78,15 @@ function App() {
               </p>
             </div>
             <div className="about-stats">
-              <div className="stat-card glass-card">
+              <div className="stat-card clean-card">
                 <h3>NLP & LLMs</h3>
                 <p>Core Specialization</p>
               </div>
-              <div className="stat-card glass-card">
+              <div className="stat-card clean-card">
                 <h3>Cloud Architect</h3>
                 <p>GCP Certified</p>
               </div>
-              <div className="stat-card glass-card">
+              <div className="stat-card clean-card">
                 <h3>Agentic AI</h3>
                 <p>Multi-Agent Systems</p>
               </div>
@@ -144,7 +99,7 @@ function App() {
           <h2 className="section-title">Professional <span className="accent">Experience</span></h2>
           <div className="timeline">
             
-            <div className="timeline-item glass-card">
+            <div className="timeline-item clean-card">
               <div className="timeline-dot"></div>
               <div className="timeline-date">Nov 2025 – Present</div>
               <h3 className="timeline-role">Machine Learning Engineer</h3>
@@ -154,7 +109,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="timeline-item glass-card">
+            <div className="timeline-item clean-card">
               <div className="timeline-dot"></div>
               <div className="timeline-date">Oct 2024 – Oct 2025</div>
               <h3 className="timeline-role">Technical Business Analyst</h3>
@@ -164,7 +119,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="timeline-item glass-card">
+            <div className="timeline-item clean-card">
               <div className="timeline-dot"></div>
               <div className="timeline-date">Jan 2024 – May 2024</div>
               <h3 className="timeline-role">Research & ML Intern</h3>
@@ -182,7 +137,7 @@ function App() {
         <section id="skills" className="section fade-in">
           <h2 className="section-title">Technical <span className="accent">Arsenal</span></h2>
           <div className="skills-grid expanded">
-            <div className="skill-category glass-card">
+            <div className="skill-category clean-card">
               <h3>Machine Learning & AI</h3>
               <div className="tags">
                 <span className="tag">Deep Learning</span>
@@ -195,7 +150,7 @@ function App() {
               </div>
             </div>
             
-            <div className="skill-category glass-card">
+            <div className="skill-category clean-card">
               <h3>Cloud & MLOps</h3>
               <div className="tags">
                 <span className="tag">Google Cloud (GCP)</span>
@@ -207,7 +162,7 @@ function App() {
               </div>
             </div>
 
-            <div className="skill-category glass-card">
+            <div className="skill-category clean-card">
               <h3>Languages & DBs</h3>
               <div className="tags">
                 <span className="tag">Python</span>
@@ -219,7 +174,7 @@ function App() {
               </div>
             </div>
 
-            <div className="skill-category glass-card">
+            <div className="skill-category clean-card">
               <h3>Web Development</h3>
               <div className="tags">
                 <span className="tag">React.js</span>
@@ -238,7 +193,7 @@ function App() {
           <h2 className="section-title">Deployed <span className="accent">AI Systems</span></h2>
           <div className="projects-grid">
             
-            <article className="project-card glass-card">
+            <article className="project-card clean-card">
               <div className="project-header">
                 <h3>Sahabat Agent</h3>
               </div>
@@ -253,7 +208,7 @@ function App() {
               </div>
             </article>
 
-            <article className="project-card glass-card">
+            <article className="project-card clean-card">
               <div className="project-header">
                 <h3>Segmentation Bot & Vertex AI Search</h3>
               </div>
@@ -268,7 +223,7 @@ function App() {
               </div>
             </article>
 
-            <article className="project-card glass-card">
+            <article className="project-card clean-card">
               <div className="project-header">
                 <h3>Finance QnA Bot</h3>
               </div>
@@ -283,7 +238,7 @@ function App() {
               </div>
             </article>
 
-            <article className="project-card glass-card">
+            <article className="project-card clean-card">
               <div className="project-header">
                 <h3>OCR Engine for Receipts</h3>
               </div>
@@ -305,22 +260,22 @@ function App() {
         <section id="certifications" className="section fade-in">
           <h2 className="section-title">Licenses & <span className="accent">Certifications</span></h2>
           <div className="cert-grid">
-            <div className="cert-card glass-card highlight-border">
+            <div className="cert-card clean-card highlight-border">
               <h4>Professional Cloud Architect</h4>
               <p className="cert-issuer">Google Cloud Certified</p>
               <p className="cert-desc">Mastery of Google Cloud Platform (GCP) architecture, practical applications, and hands-on scenario-based cloud solutions.</p>
             </div>
-            <div className="cert-card glass-card highlight-border">
+            <div className="cert-card clean-card highlight-border">
               <h4>Associate Cloud Engineer</h4>
               <p className="cert-issuer">Google Cloud Certified</p>
               <p className="cert-desc">Fundamentals of cloud computing, infrastructure architecture, and advanced features on the Google Cloud Platform.</p>
             </div>
-            <div className="cert-card glass-card">
+            <div className="cert-card clean-card">
               <h4>NLP Specialization</h4>
               <p className="cert-issuer">Coursera / DeepLearning.AI</p>
               <p className="cert-desc">Probabilistic Models, Classification, Vector Spaces, and Sequence Models using Python.</p>
             </div>
-            <div className="cert-card glass-card">
+            <div className="cert-card clean-card">
               <h4>Machine Learning Specialization</h4>
               <p className="cert-issuer">Coursera / Stanford</p>
               <p className="cert-desc">Comprehensive techniques including TensorFlow, Neural Networks, and contemporary ML algorithms.</p>
@@ -330,7 +285,7 @@ function App() {
 
         {/* Contact Section */}
         <section id="contact" className="section fade-in">
-          <div className="contact-card glass-card">
+          <div className="contact-card clean-card">
             <h2 className="section-title">Let's <span className="accent">Connect</span></h2>
             <p>I'm always open to discussing new opportunities, innovative AI projects, or just chatting about tech.</p>
             <div className="contact-links">
