@@ -20,14 +20,14 @@ function App() {
     <>
       <nav className="navbar">
         <div className="nav-content">
-          <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <a href="#hero" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="var(--text-main)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M2 17L12 22L22 17" stroke="var(--text-main)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M2 12L12 17L22 12" stroke="var(--accent-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             KJ
-          </div>
+          </a>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -44,6 +44,7 @@ function App() {
           <div className="hero-grid">
             <div className="hero-content">
               <div className="hero-badge">AI Engineer</div>
+              <h2 className="hero-greeting" style={{ fontSize: '1.8rem', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Hi, I'm Kuldeep.</h2>
               <h1 className="hero-title">
                 I Architect <span className="accent">AI Solutions</span> for Businesses.
               </h1>
