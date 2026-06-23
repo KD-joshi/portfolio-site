@@ -1,7 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
   // Intersection Observer for scroll animations
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -20,7 +24,7 @@ function App() {
     <>
       <nav className="navbar">
         <div className="nav-content">
-          <a href="#hero" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <a href="#hero" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }} onClick={closeMenu}>
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="var(--text-main)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M2 17L12 22L22 17" stroke="var(--text-main)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -28,12 +32,19 @@ function App() {
             </svg>
             KJ
           </a>
-          <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+          <button className={`menu-btn ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul className={`nav-links ${isMenuOpen ? 'mobile-active' : ''}`}>
+            <li><a href="#about" onClick={closeMenu}>About</a></li>
+            <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+            <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+            <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
           </ul>
         </div>
       </nav>

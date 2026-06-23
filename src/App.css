@@ -377,6 +377,28 @@ footer {
   transform: translateY(0);
 }
 
+/* Hamburger Menu */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-main);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
 /* Responsive */
 @media (max-width: 968px) {
   .navbar {
@@ -396,6 +418,21 @@ footer {
   .logo {
     margin-bottom: 0;
   }
+  
+  .menu-btn {
+    display: flex;
+  }
+  
+  .menu-btn.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-btn.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-btn.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
   main, footer {
     margin-left: 0;
     width: 100%;
@@ -404,7 +441,27 @@ footer {
     padding-top: calc(var(--nav-height) + 2rem);
   }
   .nav-links { 
-    display: none; /* Hide links on mobile for now, can implement hamburger menu later */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-light);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .nav-links.mobile-active {
+    max-height: 400px;
+    padding: 2rem 0;
+  }
+  
+  .nav-links li {
+    text-align: center;
   }
   .hero-grid {
     grid-template-columns: 1fr;
