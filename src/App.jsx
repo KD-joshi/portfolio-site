@@ -44,6 +44,7 @@ function App() {
             <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
             <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
             <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+            <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Resume</a></li>
             <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
           </ul>
         </div>
