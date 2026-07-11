@@ -61,7 +61,7 @@ function App() {
                 I Architect <span className="accent">AI Solutions</span> for Businesses.
               </h1>
               <p className="hero-subtitle">
-                A results-driven AI Engineer with a strong foundation in Machine Learning, Natural Language Processing (NLP), and Full Stack Web Development. I build scalable, transformer-based applications and robust end-to-end cloud systems.
+                A results-driven AI Engineer with a strong foundation in Machine Learning and Natural Language Processing (NLP). I build scalable, transformer-based applications and robust end-to-end cloud systems.
               </p>
               <div className="hero-cta">
                 <a href="#projects" className="btn btn-primary">View My Work</a>
@@ -182,7 +182,6 @@ function App() {
                 <span className="tag">Rust</span>
                 <span className="tag">SQL / MySQL</span>
                 <span className="tag">DBMS</span>
-                <span className="tag">Jupyter Lab</span>
               </div>
             </div>
 
