@@ -236,6 +236,25 @@ function App() {
 
             <article className="project-card clean-card">
               <div className="project-header">
+                <h3>OmniQuant</h3>
+              </div>
+              <p className="project-desc">
+                Full-stack quantitative analysis engine combining Geometric Brownian Motion risk forecasting, options pricing (Black-Scholes & Greeks), and automated technical indicator screening.
+              </p>
+              <div className="tags">
+                <span className="tag-small">Python</span>
+                <span className="tag-small">FastAPI</span>
+                <span className="tag-small">SciPy</span>
+                <span className="tag-small">Groq</span>
+              </div>
+              <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
+                <a href="https://omniquant-7h4n.onrender.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live Demo</a>
+                <a href="https://github.com/KD-joshi/OmniQuant" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
+              </div>
+            </article>
+
+            <article className="project-card clean-card">
+              <div className="project-header">
                 <h3>Finance QnA Bot</h3>
               </div>
               <p className="project-desc">
