@@ -285,6 +285,7 @@ main, footer {
 .project-card {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .project-header {
