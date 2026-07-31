@@ -289,6 +289,9 @@ function App() {
                 <span className="tag-small">pandas</span>
                 <span className="tag-small">spaCy</span>
               </div>
+              <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
+                <a href="https://github.com/KD-joshi/OCR-using-NLP-and-Open-CV-for-Receipts" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
+              </div>
             </article>
 
           </div>
