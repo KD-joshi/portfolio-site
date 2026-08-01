@@ -236,7 +236,7 @@ function App() {
                 <span className="tag-small">LiteLLM</span>
                 <span className="tag-small">MCP Server</span>
               </div>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', bottom: '1.5rem', right: '1.5rem', color: 'var(--text-muted)' }} title="Client Project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', bottom: '1.5rem', right: '1.5rem', color: 'var(--text-muted)', cursor: 'not-allowed' }} title="Client project, forbidden access">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
@@ -255,7 +255,7 @@ function App() {
                 <span className="tag-small">Cloud Run</span>
                 <span className="tag-small">Looker</span>
               </div>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', bottom: '1.5rem', right: '1.5rem', color: 'var(--text-muted)' }} title="Client Project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', bottom: '1.5rem', right: '1.5rem', color: 'var(--text-muted)', cursor: 'not-allowed' }} title="Client project, forbidden access">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
