@@ -216,6 +216,7 @@ function App() {
                 <span className="tag-small">Pinecone</span>
                 <span className="tag-small">FashionCLIP</span>
                 <span className="tag-small">Serverless</span>
+                <span className="tag-small">HNSW</span>
               </div>
               <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
                 <a href="https://multimodal-search-ci-cd-dvc-pipelin.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live</a>
@@ -299,15 +300,16 @@ function App() {
                 <h3>OCR Engine for Receipts</h3>
               </div>
               <p className="project-desc">
-                A custom OCR pipeline utilizing Tesseract and OpenCV to automate the capture of essential financial data (amounts, dates) from receipt imagery for downstream workflows.
+                A full-stack application that intelligently extracts structured data from receipt images using Computer Vision and NLP. Built with a Next.js frontend and FastAPI backend, it leverages OpenCV, Tesseract OCR, SpaCy NER, and fuzzy string matching for robust data extraction and fallback handling.
               </p>
               <div className="tags">
-                <span className="tag-small">pytesseract</span>
-                <span className="tag-small">OpenCV</span>
-                <span className="tag-small">pandas</span>
-                <span className="tag-small">spaCy</span>
+                <span className="tag-small">Next.js</span>
+                <span className="tag-small">FastAPI</span>
+                <span className="tag-small">OpenCV / OCR</span>
+                <span className="tag-small">SpaCy / NLP</span>
               </div>
               <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
+                <a href="https://ocr-for-reciepts.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live</a>
                 <a href="https://github.com/KD-joshi/OCR-using-NLP-and-Open-CV-for-Receipts" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
               </div>
             </article>
