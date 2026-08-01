@@ -206,6 +206,24 @@ function App() {
             
             <article className="project-card clean-card">
               <div className="project-header">
+                <h3>Multimodal Search Engine</h3>
+              </div>
+              <p className="project-desc">
+                A production-grade hybrid cloud search engine for e-commerce combining Dense Semantic Retrieval (Pinecone) and Visual Embeddings (FashionCLIP). Features automated MLOps pipelines on Kaggle via GitHub Actions for model retraining, and a serverless architecture split across Vercel and Google Colab GPUs.
+              </p>
+              <div className="tags">
+                <span className="tag-small">MLOps / CI/CD</span>
+                <span className="tag-small">Pinecone</span>
+                <span className="tag-small">FashionCLIP</span>
+                <span className="tag-small">Serverless</span>
+              </div>
+              <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
+                <a href="https://multimodal-search-ci-cd-dvc-pipelin.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live</a>
+                <a href="https://github.com/KD-joshi/Multimodal-Search-CI-CD-DVC-Pipeline" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
+              </div>
+            </article>
+            <article className="project-card clean-card">
+              <div className="project-header">
                 <h3>Sahabat Agent</h3>
               </div>
               <p className="project-desc">
