@@ -311,21 +311,6 @@ function App() {
 
             <article className="project-card clean-card">
               <div className="project-header">
-                <h3>Finance QnA Bot</h3>
-              </div>
-              <p className="project-desc">
-                A Financial Q&A Chatbot leveraging Selenium for real-time web scraping of financial statements. Implemented a robust RAG system using Langchain and multiple LLMs (Flan-T5, Gemini 1.5 Flash, Gemini 2.5 Pro) to analyze scraped contexts.
-              </p>
-              <div className="tags">
-                <span className="tag-small">Langchain</span>
-                <span className="tag-small">Gemini</span>
-                <span className="tag-small">Transformers</span>
-                <span className="tag-small">Selenium</span>
-              </div>
-            </article>
-
-            <article className="project-card clean-card">
-              <div className="project-header">
                 <h3>OCR Engine for Receipts</h3>
               </div>
               <p className="project-desc">
