@@ -292,6 +292,25 @@ function App() {
 
             <article className="project-card clean-card">
               <div className="project-header">
+                <h3>FinSight</h3>
+              </div>
+              <p className="project-desc">
+                A production-grade Agentic RAG system built on LangGraph with a self-correcting loop featuring autonomous query rewriting, Flashrank cross-encoder reranking, hallucination self-grading, and human-in-the-loop web search consent interrupts over a hybrid Pinecone dense + BM25 sparse retrieval pipeline. Implements a 3-tier LLM waterfall (Groq → Gemini → Cohere) with zero-wait failover and a custom SEC EDGAR web surfer agent for 10-K/10-Q filing extraction, with session-scoped Pinecone namespacing for multi-format document ingestion. Features a full-stack Next.js + FastAPI interface with real-time stop generation, session history, and end-to-end LLM observability via Langfuse.
+              </p>
+              <div className="tags">
+                <span className="tag-small">LangGraph</span>
+                <span className="tag-small">Pinecone</span>
+                <span className="tag-small">FastAPI</span>
+                <span className="tag-small">Next.js</span>
+                <span className="tag-small">Langfuse</span>
+              </div>
+              <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
+                <a href="https://github.com/KD-joshi/FinSight" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
+              </div>
+            </article>
+
+            <article className="project-card clean-card">
+              <div className="project-header">
                 <h3>Finance QnA Bot</h3>
               </div>
               <p className="project-desc">
