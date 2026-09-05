@@ -206,23 +206,23 @@ function App() {
             
             <article className="project-card clean-card">
               <div className="project-header">
-                <h3>Multimodal Search Engine</h3>
+                <h3>FinSight</h3>
               </div>
               <ul className="project-desc-list">
-                <li>Hybrid cloud search engine for e-commerce combining Dense Semantic Retrieval (Pinecone) and Visual Embeddings (FashionCLIP).</li>
-                <li>Automated MLOps pipelines on Kaggle via GitHub Actions for model retraining.</li>
-                <li>Serverless architecture split across Vercel and Google Colab GPUs.</li>
+                <li>Agentic RAG system on LangGraph with self-correcting loop: autonomous query rewriting, Flashrank reranking, hallucination self-grading, and human-in-the-loop web search consent interrupts.</li>
+                <li>Hybrid Pinecone dense + BM25 sparse retrieval with a 3-tier LLM waterfall (Groq → Gemini → Cohere) and zero-wait failover.</li>
+                <li>Custom SEC EDGAR web surfer agent for 10-K/10-Q filing extraction with session-scoped Pinecone namespacing for multi-format ingestion.</li>
+                <li>Full-stack Next.js + FastAPI interface with real-time stop generation, session history, and end-to-end LLM observability via Langfuse.</li>
               </ul>
               <div className="tags">
-                <span className="tag-small">MLOps / CI/CD</span>
+                <span className="tag-small">LangGraph</span>
                 <span className="tag-small">Pinecone</span>
-                <span className="tag-small">FashionCLIP</span>
-                <span className="tag-small">Serverless</span>
-                <span className="tag-small">HNSW</span>
+                <span className="tag-small">FastAPI</span>
+                <span className="tag-small">Next.js</span>
+                <span className="tag-small">Langfuse</span>
               </div>
               <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
-                <a href="https://multimodal-search-ci-cd-dvc-pipelin.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live</a>
-                <a href="https://github.com/KD-joshi/Multimodal-Search-CI-CD-DVC-Pipeline" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
+                <a href="https://github.com/KD-joshi/FinSight" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
               </div>
             </article>
             <article className="project-card clean-card">
@@ -300,23 +300,23 @@ function App() {
 
             <article className="project-card clean-card">
               <div className="project-header">
-                <h3>FinSight</h3>
+                <h3>Multimodal Search Engine</h3>
               </div>
               <ul className="project-desc-list">
-                <li>Agentic RAG system on LangGraph with self-correcting loop: autonomous query rewriting, Flashrank reranking, hallucination self-grading, and human-in-the-loop web search consent interrupts.</li>
-                <li>Hybrid Pinecone dense + BM25 sparse retrieval with a 3-tier LLM waterfall (Groq → Gemini → Cohere) and zero-wait failover.</li>
-                <li>Custom SEC EDGAR web surfer agent for 10-K/10-Q filing extraction with session-scoped Pinecone namespacing for multi-format ingestion.</li>
-                <li>Full-stack Next.js + FastAPI interface with real-time stop generation, session history, and end-to-end LLM observability via Langfuse.</li>
+                <li>Hybrid cloud search engine for e-commerce combining Dense Semantic Retrieval (Pinecone) and Visual Embeddings (FashionCLIP).</li>
+                <li>Automated MLOps pipelines on Kaggle via GitHub Actions for model retraining.</li>
+                <li>Serverless architecture split across Vercel and Google Colab GPUs.</li>
               </ul>
               <div className="tags">
-                <span className="tag-small">LangGraph</span>
+                <span className="tag-small">MLOps / CI/CD</span>
                 <span className="tag-small">Pinecone</span>
-                <span className="tag-small">FastAPI</span>
-                <span className="tag-small">Next.js</span>
-                <span className="tag-small">Langfuse</span>
+                <span className="tag-small">FashionCLIP</span>
+                <span className="tag-small">Serverless</span>
+                <span className="tag-small">HNSW</span>
               </div>
               <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
-                <a href="https://github.com/KD-joshi/FinSight" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
+                <a href="https://multimodal-search-ci-cd-dvc-pipelin.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live</a>
+                <a href="https://github.com/KD-joshi/Multimodal-Search-CI-CD-DVC-Pipeline" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
               </div>
             </article>
 

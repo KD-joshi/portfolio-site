@@ -327,7 +327,7 @@ main, footer {
   content: '▸';
   position: absolute;
   left: 0;
-  color: var(--accent-primary);
+  color: var(--text-main);
   font-weight: 700;
   font-size: 0.95rem;
 }
