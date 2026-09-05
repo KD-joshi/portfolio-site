@@ -209,10 +209,10 @@ function App() {
                 <h3>FinSight</h3>
               </div>
               <ul className="project-desc-list">
-                <li>Agentic RAG system on LangGraph with self-correcting loop: autonomous query rewriting, Flashrank reranking, hallucination self-grading, and human-in-the-loop web search consent interrupts.</li>
-                <li>Hybrid Pinecone dense + BM25 sparse retrieval with a 3-tier LLM waterfall (Groq → Gemini → Cohere) and zero-wait failover.</li>
-                <li>Custom SEC EDGAR web surfer agent for 10-K/10-Q filing extraction with session-scoped Pinecone namespacing for multi-format ingestion.</li>
-                <li>Full-stack Next.js + FastAPI interface with real-time stop generation, session history, and end-to-end LLM observability via Langfuse.</li>
+                <li>Engineered a production-grade Agentic RAG system on LangGraph featuring a self-correcting loop with autonomous query rewriting, Flashrank reranking, hallucination self-grading, and human-in-the-loop web search consent.</li>
+                <li>Architected a hybrid Pinecone dense and BM25 sparse retrieval pipeline, powered by a 3-tier LLM waterfall (Groq → Gemini → Cohere) ensuring zero-wait failover.</li>
+                <li>Developed a custom SEC EDGAR web surfer agent to autonomously extract 10-K and 10-Q filings, utilizing session-scoped Pinecone namespacing for seamless multi-format document ingestion.</li>
+                <li>Created a robust full-stack interface using Next.js and FastAPI, incorporating real-time stop generation, session history, and comprehensive end-to-end LLM observability via Langfuse.</li>
               </ul>
               <div className="tags">
                 <span className="tag-small">LangGraph</span>
@@ -225,14 +225,15 @@ function App() {
                 <a href="https://github.com/KD-joshi/FinSight" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
               </div>
             </article>
+
             <article className="project-card clean-card">
               <div className="project-header">
                 <h3>Sahabat Agent</h3>
               </div>
               <ul className="project-desc-list">
-                <li>AI-driven agent configured with a Vertex AI RAG engine for a major Indonesian telecom operator.</li>
-                <li>Assists users with account management and mobile plan recharges via an independent MCP Server deployed on Cloud Run.</li>
-                <li>Benchmarked 7+ LLMs via LiteLLM framework.</li>
+                <li>Engineered an AI-driven agent utilizing a Vertex AI RAG engine tailored for a major Indonesian telecom operator.</li>
+                <li>Created a seamless user experience to assist with account management and mobile plan recharges through an independent MCP Server deployed on Google Cloud Run.</li>
+                <li>Conducting extensive benchmarking of 7+ Large Language Models using the LiteLLM framework to ensure optimal response quality and latency.</li>
               </ul>
               <div className="tags">
                 <span className="tag-small">GCP Vertex AI</span>
@@ -256,9 +257,9 @@ function App() {
                 <h3>Segmentation Bot & Vertex AI Search</h3>
               </div>
               <ul className="project-desc-list">
-                <li>Multi-agent system to dynamically generate customized database views from a client's BigQuery master table.</li>
-                <li>Parsed natural language into executable SQL via Cloud Run and Cloud Function Frameworks.</li>
-                <li>Visualized results in Looker dashboards.</li>
+                <li>Developed a multi-agent system designed to dynamically generate customized database views directly from a client's BigQuery master table.</li>
+                <li>Architected a pipeline that successfully parses natural language into executable SQL queries, deploying the backend routing through Cloud Run and Cloud Function frameworks.</li>
+                <li>Crafted comprehensive Looker dashboards to effectively visualize the extracted data and provide actionable business insights.</li>
               </ul>
               <div className="tags">
                 <span className="tag-small">Google ADK</span>
@@ -279,33 +280,12 @@ function App() {
 
             <article className="project-card clean-card">
               <div className="project-header">
-                <h3>OmniQuant</h3>
-              </div>
-              <ul className="project-desc-list">
-                <li>Quantitative analysis engine with Geometric Brownian Motion risk forecasting.</li>
-                <li>Options pricing via Black-Scholes model and Greeks computation.</li>
-                <li>Automated technical indicator screening with AI-powered trade insights.</li>
-              </ul>
-              <div className="tags">
-                <span className="tag-small">Python</span>
-                <span className="tag-small">FastAPI</span>
-                <span className="tag-small">SciPy</span>
-                <span className="tag-small">Groq</span>
-              </div>
-              <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
-                <a href="https://omni-quant-analyst.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live</a>
-                <a href="https://github.com/KD-joshi/OmniQuant" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
-              </div>
-            </article>
-
-            <article className="project-card clean-card">
-              <div className="project-header">
                 <h3>Multimodal Search Engine</h3>
               </div>
               <ul className="project-desc-list">
-                <li>Hybrid cloud search engine for e-commerce combining Dense Semantic Retrieval (Pinecone) and Visual Embeddings (FashionCLIP).</li>
-                <li>Automated MLOps pipelines on Kaggle via GitHub Actions for model retraining.</li>
-                <li>Serverless architecture split across Vercel and Google Colab GPUs.</li>
+                <li>Engineered a production-grade hybrid cloud search engine for e-commerce, seamlessly combining Dense Semantic Retrieval via Pinecone with Visual Embeddings using FashionCLIP.</li>
+                <li>Implemented fully automated MLOps pipelines on Kaggle through GitHub Actions to facilitate continuous model retraining and deployment.</li>
+                <li>Designed a highly scalable serverless architecture distributed across Vercel for the frontend and Google Colab GPUs for heavy model inference.</li>
               </ul>
               <div className="tags">
                 <span className="tag-small">MLOps / CI/CD</span>
@@ -322,12 +302,33 @@ function App() {
 
             <article className="project-card clean-card">
               <div className="project-header">
+                <h3>OmniQuant</h3>
+              </div>
+              <ul className="project-desc-list">
+                <li>Developed a full-stack quantitative analysis engine equipped with Geometric Brownian Motion for accurate portfolio risk forecasting.</li>
+                <li>Built a robust options pricing module utilizing the Black-Scholes model to accurately compute the theoretical fair price and the associated Greeks.</li>
+                <li>Integrated an automated technical indicator screener that leverages an intelligent AI strategist (via Groq/LLM) to generate robust and actionable trade setups.</li>
+              </ul>
+              <div className="tags">
+                <span className="tag-small">Python</span>
+                <span className="tag-small">FastAPI</span>
+                <span className="tag-small">SciPy</span>
+                <span className="tag-small">Groq</span>
+              </div>
+              <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
+                <a href="https://omni-quant-analyst.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Live</a>
+                <a href="https://github.com/KD-joshi/OmniQuant" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
+              </div>
+            </article>
+
+            <article className="project-card clean-card">
+              <div className="project-header">
                 <h3>OCR Engine for Receipts</h3>
               </div>
               <ul className="project-desc-list">
-                <li>Extracts structured data from receipt images using Computer Vision and NLP.</li>
-                <li>Built with Next.js frontend and FastAPI backend.</li>
-                <li>Leverages OpenCV, Tesseract OCR, SpaCy NER, and fuzzy string matching for robust extraction and fallback handling.</li>
+                <li>Created a full-stack application dedicated to intelligently extracting structured financial data from receipt images using advanced Computer Vision and NLP techniques.</li>
+                <li>Developed a highly responsive frontend utilizing Next.js coupled with a highly performant FastAPI backend.</li>
+                <li>Engineered a robust extraction pipeline leveraging OpenCV, Tesseract OCR, SpaCy NER, and fuzzy string matching to ensure high accuracy and reliable fallback handling.</li>
               </ul>
               <div className="tags">
                 <span className="tag-small">Next.js</span>
