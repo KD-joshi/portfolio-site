@@ -208,9 +208,11 @@ function App() {
               <div className="project-header">
                 <h3>Multimodal Search Engine</h3>
               </div>
-              <p className="project-desc">
-                A production-grade hybrid cloud search engine for e-commerce combining Dense Semantic Retrieval (Pinecone) and Visual Embeddings (FashionCLIP). Features automated MLOps pipelines on Kaggle via GitHub Actions for model retraining, and a serverless architecture split across Vercel and Google Colab GPUs.
-              </p>
+              <ul className="project-desc-list">
+                <li>Hybrid cloud search engine for e-commerce combining Dense Semantic Retrieval (Pinecone) and Visual Embeddings (FashionCLIP).</li>
+                <li>Automated MLOps pipelines on Kaggle via GitHub Actions for model retraining.</li>
+                <li>Serverless architecture split across Vercel and Google Colab GPUs.</li>
+              </ul>
               <div className="tags">
                 <span className="tag-small">MLOps / CI/CD</span>
                 <span className="tag-small">Pinecone</span>
@@ -227,9 +229,11 @@ function App() {
               <div className="project-header">
                 <h3>Sahabat Agent</h3>
               </div>
-              <p className="project-desc">
-                An AI-driven agent configured with a Vertex AI RAG engine for a major Indonesian telecom operator. Assists users with account management and mobile plan recharges via an independent MCP Server deployed on Cloud Run. Benchmarked 7+ LLMs via LiteLLM framework.
-              </p>
+              <ul className="project-desc-list">
+                <li>AI-driven agent configured with a Vertex AI RAG engine for a major Indonesian telecom operator.</li>
+                <li>Assists users with account management and mobile plan recharges via an independent MCP Server deployed on Cloud Run.</li>
+                <li>Benchmarked 7+ LLMs via LiteLLM framework.</li>
+              </ul>
               <div className="tags">
                 <span className="tag-small">GCP Vertex AI</span>
                 <span className="tag-small">Python</span>
@@ -251,9 +255,11 @@ function App() {
               <div className="project-header">
                 <h3>Segmentation Bot & Vertex AI Search</h3>
               </div>
-              <p className="project-desc">
-                A multi-agent system to dynamically generate customized database views from a client's BigQuery master table. Parsed natural language into executable SQL, deployed backend routing via Cloud Run and Cloud Function Frameworks, and visualized in Looker.
-              </p>
+              <ul className="project-desc-list">
+                <li>Multi-agent system to dynamically generate customized database views from a client's BigQuery master table.</li>
+                <li>Parsed natural language into executable SQL via Cloud Run and Cloud Function Frameworks.</li>
+                <li>Visualized results in Looker dashboards.</li>
+              </ul>
               <div className="tags">
                 <span className="tag-small">Google ADK</span>
                 <span className="tag-small">BigQuery</span>
@@ -275,9 +281,11 @@ function App() {
               <div className="project-header">
                 <h3>OmniQuant</h3>
               </div>
-              <p className="project-desc">
-                Full-stack quantitative analysis engine combining Geometric Brownian Motion risk forecasting, options pricing (Black-Scholes & Greeks), and automated technical indicator screening.
-              </p>
+              <ul className="project-desc-list">
+                <li>Quantitative analysis engine with Geometric Brownian Motion risk forecasting.</li>
+                <li>Options pricing via Black-Scholes model and Greeks computation.</li>
+                <li>Automated technical indicator screening with AI-powered trade insights.</li>
+              </ul>
               <div className="tags">
                 <span className="tag-small">Python</span>
                 <span className="tag-small">FastAPI</span>
@@ -294,9 +302,12 @@ function App() {
               <div className="project-header">
                 <h3>FinSight</h3>
               </div>
-              <p className="project-desc">
-                A production-grade Agentic RAG system built on LangGraph with a self-correcting loop featuring autonomous query rewriting, Flashrank cross-encoder reranking, hallucination self-grading, and human-in-the-loop web search consent interrupts over a hybrid Pinecone dense + BM25 sparse retrieval pipeline. Implements a 3-tier LLM waterfall (Groq → Gemini → Cohere) with zero-wait failover and a custom SEC EDGAR web surfer agent for 10-K/10-Q filing extraction, with session-scoped Pinecone namespacing for multi-format document ingestion. Features a full-stack Next.js + FastAPI interface with real-time stop generation, session history, and end-to-end LLM observability via Langfuse.
-              </p>
+              <ul className="project-desc-list">
+                <li>Agentic RAG system on LangGraph with self-correcting loop: autonomous query rewriting, Flashrank reranking, hallucination self-grading, and human-in-the-loop web search consent interrupts.</li>
+                <li>Hybrid Pinecone dense + BM25 sparse retrieval with a 3-tier LLM waterfall (Groq → Gemini → Cohere) and zero-wait failover.</li>
+                <li>Custom SEC EDGAR web surfer agent for 10-K/10-Q filing extraction with session-scoped Pinecone namespacing for multi-format ingestion.</li>
+                <li>Full-stack Next.js + FastAPI interface with real-time stop generation, session history, and end-to-end LLM observability via Langfuse.</li>
+              </ul>
               <div className="tags">
                 <span className="tag-small">LangGraph</span>
                 <span className="tag-small">Pinecone</span>
@@ -313,9 +324,11 @@ function App() {
               <div className="project-header">
                 <h3>OCR Engine for Receipts</h3>
               </div>
-              <p className="project-desc">
-                A full-stack application that intelligently extracts structured data from receipt images using Computer Vision and NLP. Built with a Next.js frontend and FastAPI backend, it leverages OpenCV, Tesseract OCR, SpaCy NER, and fuzzy string matching for robust data extraction and fallback handling.
-              </p>
+              <ul className="project-desc-list">
+                <li>Extracts structured data from receipt images using Computer Vision and NLP.</li>
+                <li>Built with Next.js frontend and FastAPI backend.</li>
+                <li>Leverages OpenCV, Tesseract OCR, SpaCy NER, and fuzzy string matching for robust extraction and fallback handling.</li>
+              </ul>
               <div className="tags">
                 <span className="tag-small">Next.js</span>
                 <span className="tag-small">FastAPI</span>
