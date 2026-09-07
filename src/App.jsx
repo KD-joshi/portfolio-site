@@ -209,10 +209,11 @@ function App() {
                 <h3>FinSight</h3>
               </div>
               <ul className="project-desc-list">
-                <li>Engineered a production-grade Agentic RAG system on LangGraph featuring a self-correcting loop with autonomous query rewriting, Flashrank reranking, hallucination self-grading, and human-in-the-loop web search consent.</li>
-                <li>Architected a hybrid Pinecone dense and BM25 sparse retrieval pipeline, powered by a 3-tier LLM waterfall (Groq → Gemini → Cohere) ensuring zero-wait failover.</li>
-                <li>Developed a custom SEC EDGAR web surfer agent to autonomously extract 10-K and 10-Q filings, utilizing session-scoped Pinecone namespacing for seamless multi-format document ingestion.</li>
-                <li>Created a robust full-stack interface using Next.js and FastAPI, incorporating real-time stop generation, session history, and comprehensive end-to-end LLM observability via Langfuse.</li>
+                <li>Acts as an advanced autonomous research assistant that answers complex finance-related questions for any company by leveraging Agentic RAG and advanced search capabilities.</li>
+                <li>Eliminates AI hallucinations by ensuring all answers are strictly generated from fetched and scraped financial data securely stored in a Pinecone vector database.</li>
+                <li>Empowers users to upload their own personal or proprietary financial documents, enabling them to instantly query and extract insights from their private data.</li>
+                <li>Built with a robust agentic workflow using LangGraph to dynamically route queries, formulate multi-step research plans, and autonomously browse the web when internal knowledge is insufficient.</li>
+                <li>Utilizes a hybrid retrieval system (Pinecone + BM25 + Flashrank reranking) backed by a resilient 3-tier LLM waterfall fallback (Groq → Gemini → Cohere) to guarantee high availability and precise context retrieval.</li>
               </ul>
               <div className="tags">
                 <span className="tag-small">LangGraph</span>
