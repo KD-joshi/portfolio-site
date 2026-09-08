@@ -217,10 +217,14 @@ function App() {
               </ul>
               <div className="tags">
                 <span className="tag-small">LangGraph</span>
+                <span className="tag-small">LangChain</span>
                 <span className="tag-small">Pinecone</span>
+                <span className="tag-small">LlamaParse</span>
+                <span className="tag-small">Flashrank</span>
+                <span className="tag-small">Tavily API</span>
+                <span className="tag-small">Langfuse</span>
                 <span className="tag-small">FastAPI</span>
                 <span className="tag-small">Next.js</span>
-                <span className="tag-small">Langfuse</span>
               </div>
               <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.8rem' }}>
                 <a href="https://github.com/KD-joshi/FinSight" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>GitHub</a>
